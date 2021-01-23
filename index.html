@@ -11,8 +11,39 @@
     <script>
       var unityInstance = UnityLoader.instantiate("unityContainer", "Build/WebGl.json", {onProgress: UnityProgress});
     </script>
+    <style>
+      .btn 
+      {
+      background-color: DodgerBlue;
+      border: none;
+      color: white;
+      padding: 6px 15px;
+      cursor: pointer;
+      font-size: 20px;
+      }
+
+    /* Darker background on mouse-over */
+    .btn:hover 
+    {
+      background-color: RoyalBlue;
+    }
+    </style>
   </head>
+
   <body>
+    <div>
+      <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Auto width -->
+    <a href="https://github.com/VipulRathod1234/sliderushgame/releases/download/Downloadable/Slide.Rush.X64.Build.rar" download>
+    <button class="btn"><i class="fa fa-download"></i> Download</button>
+    </a>
+    <p>Click to download</p>
+    <p>the game for</p>
+    <p>PC/Mac/Linux</p>
+    </div>
+
     <div class="webgl-content">
       <div id="unityContainer" style="width: 960px; height: 600px"></div>
       <div class="footer">
@@ -21,5 +52,6 @@
         <div class="title">SlideRush</div>
       </div>
     </div>
+
   </body>
 </html>
