@@ -1,1 +1,2 @@
 # sliderushgame
+All Rights Reserved.
